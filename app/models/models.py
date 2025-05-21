@@ -1,9 +1,11 @@
 # app/models/models.py
 
-from sqlalchemy import Column, Integer, String, Float, ForeignKey, Enum, Text
-from sqlalchemy.orm import relationship
-from app.database import Base
 import enum
+
+from sqlalchemy import Column, Enum, Float, ForeignKey, Integer, String, Text
+from sqlalchemy.orm import relationship
+
+from app.database import Base
 
 
 class OrderStatus(enum.IntEnum):
